@@ -1,0 +1,71 @@
+<html>
+    <head>
+      <title>Checkerboard Fun!</title>
+      <style>
+
+   
+
+      .red {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        margin: -2px;
+        display: inline-block;
+        vertical-align: top;
+    
+      }
+
+      .black {
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        margin: -2px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .row {
+          line-height: 0px;
+      }
+
+
+      </style>
+    
+    </head>
+    <body>
+
+        {% for i in range(0,y): %}
+            {% if i % 2 == 0: %}
+                <div class = "row"></div>
+                {% for j in range(0,x): %}
+
+                    {% if j % 2 == 0: %}
+                    <div class = "red"></div>
+
+                    {% else: %}
+                    <div class = "black"></div>
+
+                    {% endif %}
+            
+                    {% endfor %}
+            {% else: %}
+                <div class = "row"></div>
+                    {% for j in range(0,x): %}
+
+                        {% if j % 2 != 0: %}
+                        <div class = "red"></div>
+
+                        {% else: %}
+                        <div class = "black"></div>
+
+                        {% endif %}
+                
+                    {% endfor %}
+            {% endif %}
+        {% endfor %}
+
+
+
+      
+    </body>
+</html>

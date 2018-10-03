@@ -1,0 +1,74 @@
+<html>
+    <head>
+       <title>My First Survey</title>
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+       <style>
+
+           input, select {
+               font-size: 15px;
+               margin-left: -3px;
+               display: block;
+               border-radius: 6px;
+               border: 1px solid #999999;
+               margin-bottom: 21px;
+           }
+
+           .container-fluid {
+               padding-top: 5%;
+           }
+
+            form {
+               font-size: 20px;
+           }
+
+            .btn-primary {
+               display: block;
+           }
+
+       </style>
+
+    </head>
+
+    <body>
+        <div class = "container-fluid">
+            <div class = "row justify-content-md-center">
+                <div class = "col-sm-12 col-md-6 col-lg-4">
+                    <form action='/users' method='post'>
+                        Your Name: <input type='text' placeholder= "Name" class = "form-control lg primary" name='Name'>
+                        <br>
+                        Dojo Location: <select class = "form-control" name = 'Dojo'>
+                                            <option value = "San Jose">San Jose</option>
+                                            <option value = "Los Angeles">Los Angeles</option>
+                                            <option value = "Dallas">Dallas</option>
+                                            <option value = "Tulsa">Tulsa</option>
+                                            <option value = "Boise">Boise</option>
+                                            <option value = "Boise">Boise</option>
+                                            <option value = "Seattle">Seattle</option>
+                                            <option value = "Tysons Corner">Tysons Corner</option>
+                                            <option value = "Chicago">Chicago</option>
+                                            <option value = "East Bay">East Bay</option>
+                                        </select>
+                        Favorite Language: <select class = "form-control" name = 'Language'>
+                                            <option value = "Python">Python</option>
+                                            <option value = "Java">Java</option>
+                                            <option value = "Ruby">Ruby</option>
+                                            <option value = "PHP">PHP</option>
+                                            <option value = "C">C</option>
+                                            <option value = "C#">C#</option>
+                                            <option value = "C++">C++</option>
+                                            <option value = "JavaScript">JavaScript</option>
+                                            <option value = "Swift">Swift</option>
+                                            <option value = "HTML">HTML</option>
+                                            <option value = "CSS">CSS</option>
+                                        </select>
+                        Comment (optional): <textarea class ="form-control" rows = '10' cols = '50' name = "Comment"></textarea>
+
+                        <input type='submit' class = "btn btn-primary" value='Submit'>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

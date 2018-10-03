@@ -1,0 +1,2 @@
+Hello world! 
+This is where my flask fundamentals assignments will live
